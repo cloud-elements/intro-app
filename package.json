@@ -1,0 +1,21 @@
+{
+  "name": "exampleapp",
+  "version": "1.0.0",
+  "description": "Teaches how to integrate directly to Cloud Elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "danielle laforte",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "request": "^2.81.0",
+    "url": "^0.11.0",
+    "util": "^0.10.3"
+  }
+}
