@@ -19,9 +19,9 @@ var authHeader = 'User CloudElementsUserToken, Organization CloudElementsOrgToke
 var sfdcKey = "";  
 var sfdcSecret = "";
 
-Leave the sfdcToken and the authHeaderSFDC blank.  
+   Leave the sfdcToken and the authHeaderSFDC blank.  
 
-7. Install your node modules with the command npm install from the directory that contains package.json and run the app by typing the command node app.js from the directory that contains the app.js file.
+7. Install your node modules with the command `npm install` from the directory that contains package.json and run the app by typing the command `node app.js` from the directory that contains the app.js file.
 
 8. Click the Salesforce icon to create an instance.
 
