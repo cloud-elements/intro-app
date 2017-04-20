@@ -2,7 +2,7 @@
 This basic application demonstrates how some of the fundamental features of the Could Elements platform can be used.
 
 ## Instructions
-1. Create a Salesforce app per these instructions: https://developers.cloud-elements.com/docs/elements/salesforce/salesforce-endpoint-setup.html and write down the clientId and secret.  Enter a redirect URI in the app that has this structure: ngrokTunnel + "/callback"
+1. Create a Salesforce app per these instructions: https://developers.cloud-elements.com/docs/elements/salesforce/salesforce-endpoint-setup.html and write down the clientId and secret.  Enter a redirect URI in the Salesforce app that has this structure: ngrokTunnel + "/callback"
 
 2. Install Node: https://nodejs.org/en/
 
@@ -25,7 +25,7 @@ var sfdcSecret = "";
 
 8. Click the Salesforce icon to create an instance.
 
-9. Create an organization level transformation for the SFDC instance and map it in the console.  Name it commonContact
+9. Create an organization level transformation for the SFDC instance and map it in the console.  Name it commonContact and it should only have the fields firstname, lastname, and email (mapped to FirstName, LastName, and Email)
 
 10. Enter a contact's first, last name, and email to create a contact from the app UI.
 
