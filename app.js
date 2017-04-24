@@ -1,5 +1,7 @@
 "use strict";
 
+require('dotenv').config();
+
 const bodyParser = require('body-parser');
 // const http = require("http");
 // const https = require("https");
@@ -10,14 +12,14 @@ const cors = require('cors');
 const request = require('request');
 
 
-var app = express();
+const app = express();
 
 //insert these values - best practice is to keep secrets hidden in a config file and not expose to the client side
 var envURL = 'https://staging.cloud-elements.com/elements/api-v2';
-var ngrok = "secure-local-port"; //also add callback redirect URI in the SFDC app
-var authHeader = 'User CloudElementsUserToken, Organization CloudElementsOrgToken';
-var sfdcKey = "";
-var sfdcSecret = "";
+var ngrok = process.env.NGROK; //also add callback redirect URI in the SFDC app
+var authHeader = 'User ' + process.env.CE_USER_SECRET + ', Organization ' + process.env.CE_ORG_SECRET;
+var sfdcKey = process.env.SFDC_APP_KEY;
+var sfdcSecret = process.env.SFDC_APP_SECRET;
 var sfdcToken = "";
 var authHeaderSFDC;
 
@@ -174,6 +176,6 @@ app.post('/createContact', (req, res) => {
 
 
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('Listening on port 3000!');
+app.listen(process.env.PORT || 8080, () => {
+  console.log('Listening on port 8080!');
 });

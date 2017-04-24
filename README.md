@@ -10,18 +10,26 @@ This basic application demonstrates how some of the fundamental features of the 
 
 4. Create an ngrok tunnel (https) and point to your localhost
 
-5. The app will run on localhost:3000 - if you use a different one, change it in app.js
+5. The app will run on localhost:3000 - if you use a different port, change it in app.js
 
-6. Insert the ngrok tunnel and the CloudElementsUserToken and CloudElementsOrgToken and sfdcKey and sfdcSecret
-
-var ngrok = "secure-local-port"; //also add callback redirect URI in the SFDC app
-var authHeader = 'User CloudElementsUserToken, Organization CloudElementsOrgToken';
-var sfdcKey = "";  
-var sfdcSecret = "";
-
+6. Add the ngrok tunnel and relevant Cloud Elements and SalesForce secrets and tokens to your .env file. Or add them directly to the application.
+```
+NGROK=https://12345xyz.ngrok.io
+CE_USER_SECRET=your-secret-here
+CE_ORG_SECRET=your-org-secret
+SFDC_APP_KEY=your-sfdc-key
+SFDC_APP_SECRET=your-sfdc-secret
+PORT=8080
+```
    Leave the sfdcToken and the authHeaderSFDC blank.  
 
 7. Install your node modules with the command `npm install` from the directory that contains package.json and run the app by typing the command `node app.js` from the directory that contains the app.js file.
+
+7. Run the application
+
+```
+$ node app.js
+```
 
 8. Click the Salesforce icon to create an instance.
 

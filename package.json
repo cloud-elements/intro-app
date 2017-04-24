@@ -9,8 +9,10 @@
   "author": "danielle laforte",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "http": "0.0.0",
     "https": "^1.0.0",
