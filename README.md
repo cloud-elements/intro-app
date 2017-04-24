@@ -10,18 +10,18 @@ Install the node dependencies.
 
 ```bash
 # Navigate to this directory
-$ cd /path/to/axway-element-test-helper
+$ cd intro-app
 
 # Install all necessary npm packages:
 $ npm install
 ```
 
-4. Create an https tunnel and point it to your localhost
+2. Create an https tunnel and point it to your localhost
 > Hint: Use ngrok.io
 
-4. Create a Salesforce app per these instructions: https://developers.cloud-elements.com/docs/elements/salesforce/salesforce-endpoint-setup.html and write down the `clientId` and `secret`.  Enter a redirect URI in the Salesforce app that has this structure: ngrokTunnel + "/callback"
+3. Create a Salesforce app per these instructions: https://developers.cloud-elements.com/docs/elements/salesforce/salesforce-endpoint-setup.html and write down the `clientId` and `secret`.  Enter a redirect URI in the Salesforce app that has this structure: ngrokTunnel + "/callback"
 
-3. Create a Cloud Elements environment at cloudelements.io and retrieve the User and Org secrets
+4. Create a Cloud Elements environment at cloudelements.io and retrieve the User and Org secrets
 
 5. The app will run on localhost:3000 - if you use a different port, change it in your `.env` file or directly in the `app.js`.
 
